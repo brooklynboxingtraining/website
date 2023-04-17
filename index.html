@@ -23,6 +23,7 @@
         
         <link rel="canonical" href="http://www. .com/" />
         <link rel="stylesheet" type="text/css" href="style.min.css">
+        <link rel="stylesheet" type="text/css" href="css/glider.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Dela+Gothic+One&display=swap" rel="stylesheet">
@@ -31,7 +32,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="scripts/glider.js"></script>
         
     </head>
     
@@ -63,23 +66,72 @@
         </nav>
         
         <section id="about">
-        
+            <h2>About</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BylKcWcb0Qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="content">
+                <p>Mike was born and raised in the tough streets of Brooklyn, New York. From a young age, he was drawn to the sport of boxing and began training at just nine years old. It quickly became apparent that Mike had a natural talent for the sport, and he soon started competing in local tournaments.</p>
+
+                <p>As he got older, Mike's skills continued to develop, and he quickly rose through the ranks to become one of the top boxers in his weight class. He fought in several high-profile matches and quickly gained a reputation as a fierce and determined fighter.</p>
+
+                <p>Over the years, Mike has trained countless boxers, helping them to develop their skills and reach their full potential in the ring. His dedication to the sport and his love of teaching has made him a beloved figure in the boxing community, and his legacy continues to inspire young fighters to this day.</p>
+            </div>
         </section>
         
         <section id="schedule">
-        
+            <h2>Training Schedule</h2>
+            <ul>
+                <li>
+                    <h5>Tuesday &amp; Thursday</h5>
+                    <p>6:00pm-7:30pm</p>
+                </li>
+                <li>
+                    <h5>Sunday</h5>
+                    <p>10:00am-noon</p>
+                </li>
+            </ul>
         </section>
         
         <section id="testimonials">
-        
+            
+            <h2>Testimonials</h2>
+            
+            <div class="glider-contain">
+              <div class="glider">
+                <div>
+                    <blockquote>
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
+                    </blockquote>
+                    <p>Firstname Lastname</p>  
+                </div>
+                <div>
+                    <blockquote>
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
+                    </blockquote>
+                    <p>Firstname Lastname</p>  
+                </div>
+                <div>
+                    <blockquote>
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
+                    </blockquote>
+                    <p>Firstname Lastname</p>  
+                </div>
+              </div>
+
+              <button aria-label="Previous" class="glider-prev">«</button>
+              <button aria-label="Next" class="glider-next">»</button>
+              <div role="tablist" class="dots"></div>
+            </div>
         </section>
         
         <section id="podcast">
-        
+            <h2>Podcast</h2>
         </section>
         
         <footer>
+            <div class="form">
             
+            </div>
+            <div class="phone"><tel>(917) 771-0310</tel></div>
         </footer>
     </body>
     
@@ -91,6 +143,17 @@
 	    fitText(document.getElementById('fittext'), 0.74);
         fitText(document.getElementById('fittext2'), 1.26);
 	</script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+          slidesToShow: 1,
+          dots: '#dots',
+          draggable: true,
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          }
+        });
+    </script>
     
     <!-- Tracking Code -->
     
