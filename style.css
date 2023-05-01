@@ -66,12 +66,15 @@ form .row *{display:block; margin-bottom:8px;}
 form input, form textarea, form button { border-radius: 0px; border:none; font-family: 'DM Sans', sans-serif; font-size:1em; padding:4px; width:292px; }
 form textarea {height:108px;}
 form button { background-color: var(--orange); color: var(--black); padding:12px 16px; width:300px; }
+form button:hover { cursor: pointer; opacity:0.8;}
+form button:active { background-color: var(--yellow); }
 
 @media screen and (min-width: 48em) {   
-    #top { padding:24px 24px 0 24px; text-align: left; }
+    #top { padding:16px 24px 0 24px; text-align: left; }
     tel { font-size:2em; }
 
     #top .social { position: absolute; top: 24px; right: 16px; }
+    footer .social { position:absolute; bottom:40px; right: 16px; }
     
     header img { margin-top: -40px; }
     
@@ -79,6 +82,9 @@ form button { background-color: var(--orange); color: var(--black); padding:12px
     nav ul li { display:inline-block; font-size:1.2em; padding:0 24px; }
     
     section h2, section.orange h2 { font-size:3em; }
+    
+    footer { position:relative;}
+    footer .phone { text-align: left; margin-bottom:0;}
 
 }
 
