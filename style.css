@@ -22,6 +22,7 @@ ul li { display: inline-block; padding: 0 5px; }
 
 #top { color:var(--white); font-family: 'Dela Gothic One', cursive; font-size:1em; padding:16px 16px 0 16px; margin-bottom:0; text-align: center;}
 tel { color:var(--white); font-family: 'Dela Gothic One', cursive; font-size:1.4em; }
+tel:any-link { color:var(--white);}
 #top .social a:hover {opacity: 0.3;}
 
 header { background-image: url(img/bg-header.png); background-position:bottom; background-repeat: repeat-x; padding:20px 0 40px; text-align: center;}
