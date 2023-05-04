@@ -23,7 +23,9 @@
         
         <link rel="canonical" href="http://www. .com/" />
         <link rel="stylesheet" type="text/css" href="style.min.css">
-        <link rel="stylesheet" type="text/css" href="css/glider.css">
+        <link rel="stylesheet" type="text/css" href="css/splide.min.css">
+        <link href="css/lightbox.min.css" rel="stylesheet">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Dela+Gothic+One&display=swap" rel="stylesheet">
@@ -34,7 +36,10 @@
         <link rel="manifest" href="/site.webmanifest">
         
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scripts/glider.js"></script>
+        <script src="scripts/splide.min.js"></script>
+        <script src="scripts/splide-extension-auto-scroll.min.js"></script>
+        
+
         
     </head>
     
@@ -79,6 +84,53 @@
                 <p>Over the years, Mike has trained countless boxers, helping them to develop their skills and reach their full potential in the ring. His dedication to the sport and his love of teaching has made him a beloved figure in the boxing community, and his legacy continues to inspire young fighters to this day.</p>
             </div>
         </section>
+
+        <section id="slider1" class="gallery splide" aria-label="Brooklyn Boxing Gallery">
+          <div class="splide__track">
+                <ul class="splide__list gallery">
+                    <li class="splide__slide gallery-item">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-1.jpg" data-lightbox="gallery" data-image-alt="Image 1">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-1.jpg, img/gallery/thumb/nyc-fitness-feb-12-1@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-1.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-6.jpg" data-lightbox="gallery" data-image-alt="Image 2">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-6.jpg, img/gallery/thumb/nyc-fitness-feb-12-6@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-6.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-7.jpg" data-lightbox="gallery" data-image-alt="Image 3">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-7.jpg, img/gallery/thumb/nyc-fitness-feb-12-7@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-7.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-8.jpg" data-lightbox="gallery" data-image-alt="Image 4">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-8.jpg, img/gallery/thumb/nyc-fitness-feb-12-8@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-8.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-9.jpg" data-lightbox="gallery" data-image-alt="Image 5">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-9.jpg, img/gallery/thumb/nyc-fitness-feb-12-9@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-9.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-10.jpg" data-lightbox="gallery" data-image-alt="Image 6">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-10.jpg, img/gallery/thumb/nyc-fitness-feb-12-10@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-10.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-11.jpg" data-lightbox="gallery" data-image-alt="Image 7">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-11.jpg, img/gallery/thumb/nyc-fitness-feb-12-11@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-11.jpg" />
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="img/gallery/full/nyc-fitness-feb-12-12.jpg" data-lightbox="gallery" data-image-alt="Image 8">
+                            <img srcset="img/gallery/thumb/nyc-fitness-feb-12-12.jpg, img/gallery/thumb/nyc-fitness-feb-12-12@2x.jpg 2x" src="img/gallery/thumb/nyc-fitness-feb-12-12.jpg" />
+                        </a>
+                    </li>
+                </ul>
+          </div>
+        </section>
         
         <section id="schedule" class="dark" data-aos="fade-up">
             <h2>Training Schedule</h2>
@@ -100,42 +152,41 @@
             
             <h2>Testimonials</h2>
             
-            <div class="glider-contain content">
-              <div class="glider">
-                <div>
-                    <blockquote>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
-                    </blockquote>
-                    <p>Firstname Lastname</p>  
-                </div>
-                <div>
-                    <blockquote>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
-                    </blockquote>
-                    <p>Firstname Lastname</p>  
-                </div>
-                <div>
-                    <blockquote>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
-                    </blockquote>
-                    <p>Firstname Lastname</p>  
-                </div>
+            <section id="slider2" class="splide" aria-label="Testimonials slider">
+              <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <blockquote>
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
+                            </blockquote>
+                            <p>Firstname Lastname</p>  
+                        </li>
+                        <li class="splide__slide">
+                            <blockquote>
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
+                            </blockquote>
+                            <p>Firstname Lastname</p>  
+                        </li>
+                        <li class="splide__slide">
+                            <blockquote>
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum magna in ante tincidunt auctor. Praesent iaculis porta lectus nec accumsan. Maecenas vestibulum, nulla non convallis ultricies, felis purus luctus diam, at lobortis orci enim ac lacus. Praesent in suscipit ex.”
+                            </blockquote>
+                            <p>Firstname Lastname</p>  
+                        </li>
+                    </ul>
               </div>
-
-              <button aria-label="Previous" class="glider-prev">«</button>
-              <button aria-label="Next" class="glider-next">»</button>
-              <div role="tablist" class="dots"></div>
-            </div>
+            </section>
         </section>
         
         <section id="podcast" data-aos="zoom-in">
             <h2>Podcast</h2>
+            <!-- Podcast feed -->
         </section>
         
         <footer>
             <div class="form">
                 <form
-                  action="https://formspree.io/f/mzbqoerq"
+                  action="https://formspree.io/f/xwkjynoj"
                   method="POST"
                 >
                   <span class="row">
@@ -170,6 +221,8 @@
         </footer>
     </body>
     
+    <script src="scripts/lightbox.min.js"></script>
+    
     <script>
       AOS.init();
     </script>
@@ -199,6 +252,20 @@
                 });
             });
         });
+    </script>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '#slider1' ).mount( window.splide.Extensions );
+        splide.mount();
+      } );
+        
+    </script>
+        <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '#slider2' );
+        splide.mount();
+      } );
+        
     </script>
     
     <!-- Tracking Code -->
