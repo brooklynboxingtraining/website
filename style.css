@@ -44,7 +44,7 @@ section.dark ul { list-style: none; text-align: center; }
 section.dark ul li { display: block; width:100%; }
 
 section.orange { background-color: var(--orange); color:var(--black); padding:120px 24px;}
-section.orange h2 { color:var(--black); font-size:1.8em; margin-bottom:40px;}
+section.orange h2 { color:var(--black); font-size:1.6em; margin-bottom:40px;}
 section.orange blockquote { font-family: 'DM Sans', sans-serif; font-size:1.25em; font-style: italic; text-transform: none;}
 section.orange p { text-align: center; text-transform: none;}
 
