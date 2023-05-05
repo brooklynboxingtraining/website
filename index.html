@@ -232,17 +232,6 @@
         fitText(document.getElementById('fittext2'), 1.26);
 	</script>
     <script>
-        new Glider(document.querySelector('.glider'), {
-          slidesToShow: 1,
-          dots: '#dots',
-          draggable: true,
-          arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-          }
-        });
-    </script>
-    <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -255,17 +244,20 @@
     </script>
     <script>
       document.addEventListener( 'DOMContentLoaded', function() {
-        var splide = new Splide( '#slider1' ).mount( window.splide.Extensions );
-        splide.mount();
+        var splide = new Splide( '#slider1', {
+          type   : 'loop',
+          autoScroll: {
+            speed: 1,
+          },
+        } );
+        splide.mount( window.splide.Extensions );
       } );
-        
     </script>
-        <script>
+    <script>
       document.addEventListener( 'DOMContentLoaded', function() {
         var splide = new Splide( '#slider2' );
         splide.mount();
       } );
-        
     </script>
     
     <!-- Tracking Code -->
