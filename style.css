@@ -87,6 +87,11 @@ form button:active { background-color: var(--yellow); }
 .lightbox-content { text-align: center; }
 .lightbox-content img { max-width:100%;}
 
+a[href^="tel:"] {
+  color: var(--white);
+  text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     header h1 { font-size:3.05em!important;}
     header h2 { font-size:1.8em!important;}
