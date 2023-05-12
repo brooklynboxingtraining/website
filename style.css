@@ -11,9 +11,10 @@ html, body { background-color:var(--background); margin: 0; padding: 0; overflow
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none; }
 
-body, p { color: var(--black); font-family: 'DM Sans', sans-serif; }
+body, p, ol li { color: var(--black); font-family: 'DM Sans', sans-serif; text-transform: none; }
 h1, h2, h3, h4, h5, h6, li { font-family: 'Dela Gothic One', cursive; text-transform: uppercase;}
-p { font-size: 1.2em; line-height:1.5em;}
+p, ol li { font-size: 1.2em; line-height:1.5em;}
+ol li { margin-bottom: 1em;}
 
 a { color: var(--black); text-decoration: none; }
 a:hover { color: var(--orange); }
@@ -88,6 +89,7 @@ form button:active { background-color: var(--yellow); }
 .lightbox-content img { max-width:100%;}
 
 a[href^="tel:"] {
+   font-family: 'Dela Gothic One', cursive;
   color: var(--white);
   text-decoration: none;
   font-size:1.4em;
